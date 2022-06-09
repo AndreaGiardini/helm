@@ -158,7 +158,7 @@ async function run() {
     const release = releaseName(appName, track);
     const namespace = getInput("namespace", required);
     const chart = chartName(getInput("chart", required));
-    const chartVersion = getInput("chart_version");
+    const chartVersion = getInput("chartVersion");
     const values = getValues(getInput("values"));
     const task = getInput("task");
     const version = getInput("version");
@@ -176,7 +176,7 @@ async function run() {
     core.debug(`param: appName = "${appName}"`);
     core.debug(`param: namespace = "${namespace}"`);
     core.debug(`param: chart = "${chart}"`);
-    core.debug(`param: chart_version = "${chartVersion}"`);
+    core.debug(`param: chartVersion = "${chartVersion}"`);
     core.debug(`param: values = "${values}"`);
     core.debug(`param: dryRun = "${dryRun}"`);
     core.debug(`param: task = "${task}"`);
